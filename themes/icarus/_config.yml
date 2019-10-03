@@ -137,7 +137,7 @@ widgets:
         # Whether to show avatar image rounded or square
         avatar_rounded: true
         # Path or URL for the follow button
-        follow_link: 'https://github.com/ppoffice'
+        follow_link: 'https://github.com/doinghun'
         # Links to be shown on the bottom of the profile widget
         social_links:
             Github:
@@ -165,7 +165,7 @@ widgets:
         # Links to be shown in the links widget
         links:
             Hexo: 'https://hexo.io'
-            PPOffice: 'https://github.com/ppoffice'
+            PPOffice: 'https://github.com/doinghun'
     -
         # Widget name
         type: category
