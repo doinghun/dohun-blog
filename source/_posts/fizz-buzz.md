@@ -2,15 +2,19 @@
 title: Fizz Buzz
 tags:
   - array
+  - leetcode
 categories:
   - Data Structure & Algorithm
 date: 2019-10-02 14:21:50
 ---
+<sub>_[Source - Leetcode](https://leetcode.com/problems/fizz-buzz/)_</sub>
 
-### Problem 
+### <span style="background-color: #FFFBCC"> Problem 
 Write a program that outputs the string representation of numbers from 1 to n.
 
 But for multiples of three it should output “Fizz” instead of the number and for the multiples of five output “Buzz”. For numbers which are multiples of both three and five output “FizzBuzz”.
+
+<!-- more -->
 
 __Example__:
 ```
@@ -19,7 +23,7 @@ return
 ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","FizzBuzz"]
 ```
 
-### Approach
+### <span style="background-color: #FFFBCC"> Approach
 1. Iterative approach
 2. Using modulo (%) to filter out 3 & 5
 3. To filter 15, 3 & 5 must be excluded first

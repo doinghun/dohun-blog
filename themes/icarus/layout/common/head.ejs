@@ -17,6 +17,10 @@
     }) %>
 <% } %>
 
+<% if (config.google_site_verification) { %>
+    <meta name="google-site-verification" content="<%= config.google_site_verification %>" />
+<% } %>
+
 <% if (has_config('canonical_url')) { %>
 <link rel="canonical" href="<%- get_config('canonical_url') %>" />
 <% } %>

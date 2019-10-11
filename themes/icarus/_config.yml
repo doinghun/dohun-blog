@@ -1,13 +1,13 @@
 # Version of the Icarus theme that is currently used
 version: 2.6.0
 # Path or URL to the website's icon
-favicon: /images/favicon.svg
+favicon: /images/icon.png
 # Additional HTML meta tags in an array.
 meta: 
 # Path or URL to RSS atom.xml
 rss: 
 # Path or URL to the website's logo to be shown on the left of the navigation bar or footer
-logo: /images/logo.svg
+logo: /images/icon.png
 # Open Graph metadata
 # https://hexo.io/docs/helpers.html#open-graph
 open_graph:
@@ -54,7 +54,7 @@ article:
     highlight:
         # Code highlight themes
         # https://github.com/highlightjs/highlight.js/tree/master/src/styles
-        theme: atom-one-dark
+        theme: monokai
         # Show code copying button
         clipboard: true
         # Default folding status of the code blocks. Can be "", "folded", "unfolded"
@@ -148,24 +148,24 @@ widgets:
                 url: 'https://twitter.com/dotheVsign'
             LinkedIn:
                icon: fab fa-linkedin
-               url: 'https://linkedin.com/doinghun1/'
-            RSS:
-               icon: fas fa-rss
-               url: /
+               url: 'https://linkedin.com/in/dohunkim1/'
+            # RSS:
+            #    icon: fas fa-rss
+            #    url: /
     -
         # Widget name
         type: toc
         # Where should the widget be placed, left or right
         position: left
-    -
-        # Widget name
-        type: links
-        # Where should the widget be placed, left or right
-        position: left
-        # Links to be shown in the links widget
-        links:
-            Hexo: 'https://hexo.io'
-            PPOffice: 'https://github.com/doinghun'
+    # -
+        # #Widget name
+        #  type: links
+        # # Where should the widget be placed, left or right
+        # position: left
+        # # Links to be shown in the links widget
+        # links:
+        #     Hexo: 'https://hexo.io'
+        #     PPOffice: 'https://github.com/doinghun'
     -
         # Widget name
         type: category
@@ -210,7 +210,7 @@ plugins:
     # https://ppoffice.github.io/hexo-theme-icarus/Plugins/General/site-analytics-plugin/#Google-Analytics
     google-analytics:
         # Google Analytics tracking id
-        tracking_id: 
+        tracking_id: UA-149595338-1
     # Baidu Analytics plugin settings
     # https://ppoffice.github.io/hexo-theme-icarus/Plugins/General/site-analytics-plugin/#Baidu-Analytics
     baidu-analytics:
