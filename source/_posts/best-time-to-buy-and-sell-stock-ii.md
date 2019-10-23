@@ -1,13 +1,12 @@
 ---
 title: Best Time To Buy and Sell Stock II
 tags:
-  - array
+  - leetcode
 categories:
   - Data Structure & Algorithm
+  - Array
 date: 2019-10-07 22:08:57
 ---
-<sub>_[Source - Leetcode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)_</sub>
-
 ### <span style="background-color: #FFFBCC"> Problem
 
 Say you have an array for which the ith element is the price of a given stock on day i.
@@ -50,3 +49,6 @@ var maxProfit = function(prices) {
     return total
 };
 ```
+
+-----
+_[Question Source - Leetcode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)_

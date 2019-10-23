@@ -1,15 +1,13 @@
 ---
 title: Convert Sorted Array To Binary Search Tree
 tags:
-  - tree
   - depth-first search
   - leetcode
 categories:
   - Data Structure & Algorithm
+  - Tree
 date: 2019-10-07 22:08:35
 ---
-<sub>_[Source - Leetcode](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)_</sub>
-
 ### <span style="background-color: #FFFBCC"> Problem
 Given an array where elements are sorted in ascending order, convert it to a height balanced BST.
 
@@ -49,3 +47,5 @@ var sortedArrayToBST = function(nums) {
     return node
 };
 ```
+-----
+_[Question Source - Leetcode](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)_

@@ -1,14 +1,12 @@
 ---
 title: Fizz Buzz
 tags:
-  - array
   - leetcode
 categories:
   - Data Structure & Algorithm
+  - Array
 date: 2019-10-02 14:21:50
 ---
-<sub>_[Source - Leetcode](https://leetcode.com/problems/fizz-buzz/)_</sub>
-
 ### <span style="background-color: #FFFBCC"> Problem 
 Write a program that outputs the string representation of numbers from 1 to n.
 
@@ -49,3 +47,5 @@ var fizzBuzz = function(n) {
     return ans
 };
 ```
+-----
+_[Question Source - Leetcode](https://leetcode.com/problems/fizz-buzz/)_

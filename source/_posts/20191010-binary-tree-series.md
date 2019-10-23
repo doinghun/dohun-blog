@@ -7,11 +7,6 @@ categories:
   - Tree
 date: 2019-10-10 14:00:04
 ---
-
-<sub>_[Source - Leetcode](https://leetcode.com/explore/learn/card/data-structure-tree/134/traverse-a-tree/)_</sub>
-
-- This article is a collection of all binary tree traversal methods through iterative approach in Javascript.
-
 ## Binary Tree Traversal
 ###  <span style="background-color: #FFFBCC"> Depth-First Search
 #### Pre-order Traversal
@@ -171,7 +166,8 @@ var levelOrder = function(root) {
 __Note:__
 - Stack: LIFO (Last In First Out) ie. Stack of Plates
 - Queue: FIFO (First In First Out) ie. Queue in the movie
-
+-----
 _References:_
-- [Data Structures: Stacks & Queues](https://www.youtube.com/watch?v=wjI1WNcIntg)
-- [Data Structure & Algorightms - Tree Traversal](https://www.tutorialspoint.com/data_structures_algorithms/tree_traversal.htm)
+- _[Question Source - Leetcode](https://leetcode.com/explore/learn/card/data-structure-tree/134/traverse-a-tree/)_
+- _[Data Structures: Stacks & Queues](https://www.youtube.com/watch?v=wjI1WNcIntg)_
+- _[Data Structure & Algorightms - Tree Traversal](https://www.tutorialspoint.com/data_structures_algorithms/tree_traversal.htm)_

@@ -1,14 +1,12 @@
 ---
 title: Delete Node In a Singly Linked List
 tags:
-  - linked list
   - leetcode
 categories:
   - Data Structure & Algorithm
+  - Linked List
 date: 2019-10-02 15:48:28
 ---
-<sub>_[Source - Leetcode](https://leetcode.com/problems/delete-node-in-a-linked-list/)_</sub>
-
 ### <span style="background-color: #FFFBCC"> Problem 
 Write a function to delete a node (except the tail) in a singly linked list, given only access to that node.
 
@@ -47,3 +45,6 @@ var deleteNode = function(node) {
 
 ### Take Away
 - [Deleting the Linked List](https://leetcode.com/explore/learn/card/linked-list/209/singly-linked-list/1289/)
+
+-----
+_[Question Source - Leetcode](https://leetcode.com/problems/delete-node-in-a-linked-list/)_

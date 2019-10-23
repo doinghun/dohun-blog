@@ -1,12 +1,12 @@
 ---
 title: Valid Anagram
 tags:
-  - string
+  - leetcode
 categories:
   - Data Structure & Algorithm
+  - String
 date: 2019-10-06 22:19:36
 ---
-
 ### <span style="background-color: #FFFBCC"> Problem
 Given two strings s and t , write a function to determine if t is an anagram of s.
 
@@ -70,3 +70,6 @@ var isAnagram = function(s, t) {
 
 - Did not take into account that same alphabet can be stacked.
 - In the 2nd Attempt, it's as easy as increasing the alphabet value in the map at 's' loop and decreasing the alphabet value in the map at 't' loop. If the map is empty at the end of the function, it is true.
+
+-----
+_[Question Source](https://leetcode.com/problems/valid-anagram)_
