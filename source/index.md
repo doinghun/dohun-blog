@@ -1,9 +1,19 @@
 ---
 layout: about
-title: Hi, I'm Dohun.
+title: About Me
 date: 2019-10-07 20:24:29
 widgets:
+  - type: recent_posts
+    position: right
 ---
+
+{% raw %}
+
+<div class="typewriter">
+  <h1>Hi, I'm Dohun.</h1>
+</div>
+
+{% endraw %}
 
 <center>
   {% img '/img/me.jpg' 300 %}
@@ -12,7 +22,8 @@ widgets:
 
 ## Intro.
 
-Hi, I'm Dohun Kim, Growth Marketer turned Developer. Currently living in Singapore 🇸🇬.
+Hey there, I'm Dohun, Growth Marketer turned Developer.
+Currently living in Singapore 🇸🇬.
 
 {% raw %}
 
@@ -57,6 +68,33 @@ a.button.is-linkedin {
 }
 .project-links {
   margin-bottom: 16px;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  text-align: center;
+  color: #000000;
+  font-family: roboto;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
 }
 </style>
 
