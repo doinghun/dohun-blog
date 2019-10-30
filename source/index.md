@@ -1,16 +1,20 @@
 ---
 layout: about
-title: About Me
 date: 2019-10-07 20:24:29
 widgets:
-  - type: recent_posts
-    position: right
 ---
 
 {% raw %}
 
-<div class="typewriter">
-  <h1>Hi, I'm Dohun.</h1>
+<div class="wrapper">
+    <div class="typewriter">
+        <h1>
+            <a href="" class="typewrite" data-period="2000"
+                data-type='[ &quot;Hi, Im Dohun.&quot;, &quot;I Love to Make Things.&quot;, &quot;I Love Design.&quot;, &quot;I Love to Grow.&quot; ]'>
+                <span class="wrap"></span>
+            </a>
+        </h1>
+    </div>
 </div>
 
 {% endraw %}
@@ -71,17 +75,22 @@ a.button.is-linkedin {
 }
 
 /* DEMO-SPECIFIC STYLES */
-.typewriter h1 {
-  text-align: center;
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.typewriter h1 span{
   color: #000000;
-  font-family: roboto;
+  font-size: 33px;
+  font-family: inherit;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0em; /* Adjust as needed */
   animation: 
-    typing 3.5s steps(30, end),
+    typing 2s steps(30, end),
     blink-caret .5s step-end;
 }
 
@@ -97,5 +106,60 @@ a.button.is-linkedin {
   50% { border-color: orange }
 }
 </style>
+
+<script>
+var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            console.log(toRotate)
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+    };
+</script>
 
 {% endraw %}
