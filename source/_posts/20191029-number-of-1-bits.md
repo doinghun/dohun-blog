@@ -3,7 +3,7 @@ title: Number of 1 Bits
 tags:
   - leetcode
 categories:
-  - Data Structure & Algorithm
+  - Data Structures & Algorithms
   - Binary
 date: 2019-10-29 11:58:37
 ---

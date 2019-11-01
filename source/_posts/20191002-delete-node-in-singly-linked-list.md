@@ -3,22 +3,27 @@ title: Delete Node In a Singly Linked List
 tags:
   - leetcode
 categories:
-  - Data Structure & Algorithm
+  - Data Structures & Algorithms
   - Linked List
 date: 2019-10-02 15:48:28
 ---
-### <span style="background-color: #FFFBCC"> Problem 
+
+### <span style="background-color: #FFFBCC"> Problem
+
 Write a function to delete a node (except the tail) in a singly linked list, given only access to that node.
 
 <!-- more -->
 
 Given linked list -- head = [4,5,1,9]
-__Example 1__:
+**Example 1**:
+
 ```
 Input: head = [4,5,1,9], node = 5
 Output: [4,1,9]
 ```
-__Example 2__:
+
+**Example 2**:
+
 ```
 Input: head = [4,5,1,9], node = 1
 Output: [4,5,9]
@@ -33,18 +38,21 @@ Note:
 - Do not return anything from your function.
 
 ### <span style="background-color: #FFFBCC"> Approach
+
 1. Delete the first node
 2. Assign next node to head
 
 ```javascript
-var deleteNode = function(node) {    
-        node.val = node.next.val
-        node.next = node.next.next
-};
+var deleteNode = function(node) {
+  node.val = node.next.val
+  node.next = node.next.next
+}
 ```
 
 ### Take Away
+
 - [Deleting the Linked List](https://leetcode.com/explore/learn/card/linked-list/209/singly-linked-list/1289/)
 
------
+---
+
 _[Question Source - Leetcode](https://leetcode.com/problems/delete-node-in-a-linked-list/)_

@@ -1,6 +1,5 @@
 ---
 layout: about
-date: 2019-10-07 20:24:29
 widgets:
 ---
 

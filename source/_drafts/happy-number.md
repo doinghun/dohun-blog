@@ -23,10 +23,10 @@ Explanation:
 
 _[Question Source: LeetCode](https://leetcode.com/problems/happy-number/)_
 
-### Attempt
+### <span style="background-color: #FFFBCC"> Solution
 
 - Solved in 40 mins without reference
-- Used storage in array to refer to previously stored value but could use hash map concept.
+- Used array as storage to refer to previously stored value but could use hash map concept.
 
 ```javascript
 /**
