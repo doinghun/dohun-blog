@@ -1,5 +1,5 @@
 ---
-title: reverse-string
+title: Reverse String
 tags:
   - leetcode
 categories:

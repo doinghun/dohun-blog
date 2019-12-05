@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: page
 widgets:
 ---
 
@@ -9,7 +9,7 @@ widgets:
     <div class="typewriter">
         <h1>
             <a href="" class="typewrite" data-period="2000"
-                data-type='[ &quot;Hi, Im Dohun.&quot;, &quot;I Love to Make Things.&quot;, &quot;I Love Design.&quot;, &quot;I Love to Grow.&quot; ]'>
+                data-type='[ &quot;Hi, I’m Dohun.&quot;, &quot;I Love to Make Things.&quot;, &quot;I Love Great Design.&quot;, &quot; I Learn Everyday.&quot; ]'>
                 <span class="wrap"></span>
             </a>
         </h1>
@@ -19,13 +19,13 @@ widgets:
 {% endraw %}
 
 <center>
-  {% img '/img/me.jpg' 300 %}
+  {% img '/img/undraw_digital_nomad_9kgl.svg' 300 %}
   <br>
 </center>
 
 ## Intro.
 
-Hey there, I'm Dohun, Growth Marketer turned Developer.
+Hey there, I'm Dohun, Growth Marketer turned Software Developer.
 Currently living in Singapore 🇸🇬.
 
 {% raw %}
@@ -45,6 +45,89 @@ Currently living in Singapore 🇸🇬.
   </a>
 </div>
 {% endraw %}
+
+---
+
+## **Projects**
+
+### **Merlabot**
+
+<center>
+  {% img '/img/Merlabot_Animation.gif' 200 %}
+  <br>
+</center>
+
+{% raw %}
+
+  <div class="project-links">
+    <a class="button is-large is-white" href="http://bit.ly/2ONZh5E">
+      <span class="icon"><i class="fab fa-github"></i></span>
+    </a>
+    <a class="button is-large is-white" href="http://bit.ly/2RhtBr1">
+      <span class="icon"><i class="fas fa-play"></i></span>
+    </a>
+  </div>
+{% endraw %}
+
+Merlabot is a Singapore Travel bot for Korean tourists. It gives recommendations on what to eat in Singapore and answers frequently asked questions about Singapore.
+
+<!-- It is built on Node.js app running on heroku server with Dialogflow API & Facebook Messenger API integration and uses PostgreSQL for databases. -->
+
+Tech Stack:
+
+- `Node.js`
+- `PostgreSQL`
+- `Dialogflow`
+
+### **ToDo List**
+
+<center>
+  {% img '/img/todolist-capture.PNG' 1000 %}
+  <br>
+</center>
+
+{% raw %}
+
+  <div class="project-links">
+    <a class="button is-large is-white" href="http://bit.ly/2ONoDkk">
+      <span class="icon"><i class="fab fa-github"></i></span>
+    </a>
+    <a class="button is-large is-white" href="http://bit.ly/34IVdsZ">
+      <span class="icon"><i class="fas fa-play"></i></span>
+    </a>
+  </div>
+{% endraw %}
+
+This is a simple todo list made with nodejs & ejs template engine. It also includes authentication with sign-up & login and database to save user info as well as their todo task lists.
+
+Tech Stack:
+
+- `Node.js`
+- `EJS`
+- `PostgreSQL`
+- `Axios`
+
+### **Instagram Like Bot**
+
+<center>
+  {% img '/img/ig-bot-demo.gif' 600 %}
+  <br>
+</center>
+{% raw %}
+
+  <div class="project-links">
+    <a class="button is-large is-white" href="http://bit.ly/36bl6SL">
+      <span class="icon"><i class="fab fa-github"></i></span>
+    </a>
+  </div>
+{% endraw %}
+
+I built Instagram Like bot with puppeteer web-scraping library that automatically likes the top 3 recent posts of hashtags provided.
+
+Tech Stack:
+
+- `Node.js`
+- `Puppeteer`
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: missing-number
+title: Missing Number
 tags:
   - leetcode
 categories:
@@ -7,7 +7,6 @@ categories:
   - Array
 date: 2019-10-31 17:51:01
 ---
-
 
 ### <span style="background-color: #FFFBCC"> Problem
 

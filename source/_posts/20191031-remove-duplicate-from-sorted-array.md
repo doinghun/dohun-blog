@@ -1,12 +1,11 @@
 ---
-title: remove-duplicate-from-sorted-array
+title: Remove Duplicate from Sorted Array
 categories:
   - Data Structures & Algorithms
   - Array
 date: 2019-10-31 17:36:53
 tags:
 ---
-
 
 ### <span style="background-color: #FFFBCC"> Problem
 

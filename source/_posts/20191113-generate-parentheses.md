@@ -1,10 +1,11 @@
 ---
-title: generate-parentheses
+title: 22. Generate Parentheses
 tags:
   - leetcode
 categories:
-  - Data Structure & Algorithm
+  - Data Structures & Algorithms
   - Backtracking
+date: 2019-11-13 00:23:02
 ---
 
 ### <span style="background-color: #FFFBCC"> Problem
@@ -29,24 +30,24 @@ For example, given n = 3, a solution set is:
  * @return {string[]}
  */
 var generateParenthesis = function(n) {
-  let res = []
-  let par = ""
-  backtrack(res, par, 0, 0, n)
-  return res
-}
+  let res = [];
+  let par = "";
+  backtrack(res, par, 0, 0, n);
+  return res;
+};
 
 const backtrack = (res, par, open, close, max) => {
   if (par.length == max * 2) {
     //base case - str has 6 parentheses
-    res.push(par)
-    return
+    res.push(par);
+    return;
   }
 
   if (open < max)
     // add open parenthesis
-    backtrack(res, par + "(", open + 1, close, max) //recursive call after increasing open by 1
+    backtrack(res, par + "(", open + 1, close, max); //recursive call after increasing open by 1
   if (close < open)
     // add corresponding close parenthesis
-    backtrack(res, par + ")", open, close + 1, max)
-}
+    backtrack(res, par + ")", open, close + 1, max);
+};
 ```
