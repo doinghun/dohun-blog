@@ -3,6 +3,13 @@ layout: page
 widgets:
 ---
 
+<center>
+  {% img "is-rounded" '/img/me.jpg' 200 %}
+  <br>
+  <br>
+
+</center>
+
 {% raw %}
 
 <div class="wrapper">
@@ -17,11 +24,6 @@ widgets:
 </div>
 
 {% endraw %}
-
-<center>
-  {% img '/img/undraw_digital_nomad_9kgl.svg' 300 %}
-  <br>
-</center>
 
 ## Intro.
 
@@ -50,90 +52,42 @@ Currently living in Singapore 🇸🇬.
 
 ## **Projects**
 
-### **Merlabot**
-
-<center>
-  {% img '/img/Merlabot_Animation.gif' 200 %}
-  <br>
-</center>
-
 {% raw %}
 
-  <div class="project-links">
-    <a class="button is-large is-white" href="http://bit.ly/2ONZh5E">
-      <span class="icon"><i class="fab fa-github"></i></span>
-    </a>
-    <a class="button is-large is-white" href="http://bit.ly/2RhtBr1">
-      <span class="icon"><i class="fas fa-play"></i></span>
-    </a>
+  <div class="card">
+    <div class="card-image"><a data-link-name="main" href="/2019/12/09/todo-list/" class="image is-7by1"><img class="thumbnail" src="/2019/12/09/todo-list/todolist-cover.png" alt="todo-list"></a></div>
+    <div class="card-content article">
+    <h2><b> ToDo List </b></h2>
+    <p>Simple todo-list built with 2 different frameworks - Node.js vs React </p>
+    </div>
   </div>
-{% endraw %}
 
-Merlabot is a Singapore Travel bot for Korean tourists. It gives recommendations on what to eat in Singapore and answers frequently asked questions about Singapore.
-
-<!-- It is built on Node.js app running on heroku server with Dialogflow API & Facebook Messenger API integration and uses PostgreSQL for databases. -->
-
-Tech Stack:
-
-- `Node.js`
-- `PostgreSQL`
-- `Dialogflow`
-
-### **ToDo List**
-
-<center>
-  {% img '/img/todolist-capture.PNG' 1000 %}
-  <br>
-</center>
-
-{% raw %}
-
-  <div class="project-links">
-    <a class="button is-large is-white" href="http://bit.ly/2ONoDkk">
-      <span class="icon"><i class="fab fa-github"></i></span>
-    </a>
-    <a class="button is-large is-white" href="http://bit.ly/34IVdsZ">
-      <span class="icon"><i class="fas fa-play"></i></span>
-    </a>
+  <div class="card">
+    <div class="card-image"><a data-link-name="main" href="/2019/12/10/merlabot" class="image is-7by1"><img class="thumbnail" src="/2019/12/10/merlabot/merlabot-cover.png" alt="todo-list"></a></div>
+    <div class="card-content article">
+    <h2><b> Merlabot </b></h2>
+    <p>Merlabot is a Singapore Travel bot for Korean tourists.</p>
+    </div>
   </div>
-{% endraw %}
 
-This is a simple todo list made with nodejs & ejs template engine. It also includes authentication with sign-up & login and database to save user info as well as their todo task lists.
-
-Tech Stack:
-
-- `Node.js`
-- `EJS`
-- `PostgreSQL`
-- `Axios`
-
-### **Instagram Like Bot**
-
-<center>
-  {% img '/img/ig-bot-demo.gif' 600 %}
-  <br>
-</center>
-{% raw %}
-
-  <div class="project-links">
-    <a class="button is-large is-white" href="http://bit.ly/36bl6SL">
-      <span class="icon"><i class="fab fa-github"></i></span>
-    </a>
+  <div class="card">
+    <div class="card-image"><a data-link-name="main" href="/2019/12/10/automating-instagram-likes" class="image is-7by1"><img class="thumbnail" src="/2019/12/10/automating-instagram-likes/like-machine.png" alt="todo-list"></a></div>
+    <div class="card-content article">
+    <h2><b> Automating Instagram Likes </b></h2>
+    <p>Programme that likes top 3 recent post of hashtags provided</p>
+    </div>
   </div>
+
 {% endraw %}
-
-I built Instagram Like bot with puppeteer web-scraping library that automatically likes the top 3 recent posts of hashtags provided.
-
-Tech Stack:
-
-- `Node.js`
-- `Puppeteer`
-
----
 
 {% raw %}
 
 <style>
+
+img.is-rounded {
+    border-radius: 50%;
+}
+
 .buttons {
   width: 100%;
   display: flex;
