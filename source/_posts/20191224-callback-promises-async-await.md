@@ -11,6 +11,11 @@ There are different ways to execute asynchronous function in JavaScript.
 
 <!-- more -->
 
+To call a function that does following task:
+
+- Print a string `A`, `B`, `C` in order
+- After a random amount of time.
+
 ### Callbacks
 
 ```javascript
@@ -61,6 +66,15 @@ The code is no longer nested but it still looks messy!
 ### Await
 
 ```javascript
+function printString(string) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log(string)
+      resolve()
+    }, Math.floor(Math.random() * 100) + 1)
+  })
+}
+
 async function printAll() {
   await printString("A")
   await printString("B")
