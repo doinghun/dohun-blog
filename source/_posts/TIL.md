@@ -3,6 +3,7 @@ title: Bye bye TIL
 categories:
   - Learn Log
 tags:
+date: 2019-12-14 00:00:14
 ---
 
 ### Changing the format of Today I Learned

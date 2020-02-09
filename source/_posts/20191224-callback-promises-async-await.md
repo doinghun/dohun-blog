@@ -4,7 +4,7 @@ categories:
   - Programming
   - JavaScript
 date: 2019-12-24 23:57:52
-thumbnail: /2019/12/25/callback-promises-async-await/callback-hell-cover.png
+thumbnail: /2019/12/24/callback-promises-async-await/callback-hell-cover.png
 ---
 
 There are different ways to execute asynchronous function in JavaScript.
@@ -21,19 +21,19 @@ To call a function that does following task:
 ```javascript
 function printString(string, callback) {
   setTimeout(() => {
-    console.log(string)
-    callback()
-  }, Math.floor(Math.random() * 100) + 1)
+    console.log(string);
+    callback();
+  }, Math.floor(Math.random() * 100) + 1);
 }
 
 function printAll() {
   printString("A", () => {
     printString("B", () => {
-      printString("C", () => {})
-    })
-  })
+      printString("C", () => {});
+    });
+  });
 }
-printAll()
+printAll();
 ```
 
 Callback Hell
@@ -47,18 +47,18 @@ Callback Hell
 function printString(string) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      console.log(string)
-      resolve()
-    }, Math.floor(Math.random() * 100) + 1)
-  })
+      console.log(string);
+      resolve();
+    }, Math.floor(Math.random() * 100) + 1);
+  });
 }
 
 function printAll() {
   printString("A")
     .then(() => printString("B"))
-    .then(() => printString("C"))
+    .then(() => printString("C"));
 }
-printAll()
+printAll();
 ```
 
 The code is no longer nested but it still looks messy!
@@ -69,18 +69,18 @@ The code is no longer nested but it still looks messy!
 function printString(string) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      console.log(string)
-      resolve()
-    }, Math.floor(Math.random() * 100) + 1)
-  })
+      console.log(string);
+      resolve();
+    }, Math.floor(Math.random() * 100) + 1);
+  });
 }
 
 async function printAll() {
-  await printString("A")
-  await printString("B")
-  await printString("C")
+  await printString("A");
+  await printString("B");
+  await printString("C");
 }
-printAll()
+printAll();
 ```
 
 Await is basically syntactic sugar for Promises. It makes your asynchronous code look more like synchronous/procedural code, which is easier for humans to understand.

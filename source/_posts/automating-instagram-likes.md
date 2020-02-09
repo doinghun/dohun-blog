@@ -3,6 +3,7 @@ title: Automating Instagram Likes
 layout: page
 widgets:
 category: Projects
+date: 2019-12-10 00:00:14
 thumbnail: /2019/12/10/automating-instagram-likes/like-machine.png
 ---
 

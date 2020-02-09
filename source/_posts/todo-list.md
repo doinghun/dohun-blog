@@ -9,6 +9,7 @@ sidebar:
   right:
     sticky: true
 category: Projects
+date: 2019-12-09 00:00:14
 thumbnail: /2019/12/09/todo-list/todolist-cover.png
 ---
 

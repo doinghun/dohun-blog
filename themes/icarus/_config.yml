@@ -1,13 +1,13 @@
 # Version of the Icarus theme that is currently used
 version: 2.6.0
 # Path or URL to the website's icon
-favicon: /images/icon.png
+favicon: /img/icon.png
 # Additional HTML meta tags in an array.
 meta:
 # Path or URL to RSS atom.xml
 rss:
 # Path or URL to the website's logo to be shown on the left of the navigation bar or footer
-logo: /images/icon.png
+logo: /img/icon.png
 # Open Graph metadata
 # https://hexo.io/docs/helpers.html#open-graph
 open_graph:
@@ -25,13 +25,14 @@ open_graph:
 navbar:
   # Navigation bar menu links
   menu:
-    About: /
-    Home: /home
+    Home: /
     Archives: /archives
     Categories: /categories
+    About: /about
 
   # Navigation bar links to be shown on the right
   links:
+    TIL: /TIL
     Download on GitHub:
       icon: fab fa-github
       url: "https://github.com/doinghun"
@@ -130,7 +131,7 @@ widgets:
     # Author's current location to be shown in the profile widget
     location: Singapore
     # Path or URL to the avatar to be shown in the profile widget
-    avatar: /images/me.jpg
+    avatar: /img/me.jpg
     # Email address for the Gravatar to be shown in the profile widget
     gravatar:
     # Whether to show avatar image rounded or square

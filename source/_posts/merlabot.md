@@ -3,6 +3,7 @@ title: Merlabot
 layout: page
 widgets:
 category: Projects
+date: 2019-12-10 00:00:14
 thumbnail: /2019/12/10/merlabot/merlabot-cover.png
 ---
 
